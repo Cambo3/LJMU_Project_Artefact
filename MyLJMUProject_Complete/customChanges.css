@@ -1,0 +1,153 @@
+.container {
+  max-width: 960px;
+}
+
+.normalButton {
+    width: 250px;
+    margin: 2px;
+}
+
+.quizButton {
+    height: 100px;
+    width: 250px;
+    margin: 2px;
+}
+
+.quizAnswerButton {
+    width: 250px;
+    margin: 10px;
+}
+
+.beginnerQuizButton {
+    width: 250px;
+    margin: 10px;
+    background-color: #5cb85c;
+}
+
+.beginnerQuizButton:hover {
+    width: 250px;
+    margin: 10px;
+    background-color: #53a565;
+}
+
+.intermediateQuizButton {
+    width: 250px;
+    margin: 10px;
+    background-color: #f0ad4e;
+}
+
+.intermediateQuizButton:hover {
+    width: 250px;
+    margin: 10px;
+    background-color: #d6981d;
+}
+
+.expertQuizButton {
+    width: 250px;
+    margin: 10px;
+    background-color: #d9534f;
+}
+
+.expertQuizButton:hover {
+    width: 250px;
+    margin: 10px;
+    background-color: #bc2c18;
+}
+
+.imageCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+    
+    background-image: url('iStock-1063965916.jpg');
+    
+}
+
+.backgroundColour {
+    
+    background-color: #f7f7f7;
+    height:auto;
+    
+}
+
+.BeginnerBackgroundColour {
+    
+    background-color: #5cb85c;
+    height: auto;
+    
+}
+
+.intermediatBackgroundColour {
+    
+    background-color: #f0ad4e;
+    height: auto;
+    
+}
+
+.ExpertBackgroundColour {
+    
+    background-color: #d9534f;
+    height: auto;
+    
+}
+
+.beginnerTitle {
+    
+    color: #5cb85c
+    
+}
+
+.intermediateTitle {
+    
+    color: #f0ad4e
+    
+}
+
+.expertTitle {
+    
+    color: #d9534f
+    
+}
+
+.beginnerLine {
+    
+    background-color: #5cb85c
+    
+}
+
+.intermediateLine {
+    
+    background-color: #f0ad4e
+    
+}
+
+.expertLine {
+    
+    background-color: #d9534f
+    
+}
+
+tr {
+    
+    border-bottom: 1px solid #dddddd;
+    
+}
+
+.whiteText {
+    
+    color: #f7f7f7;
+    
+}
+
+.instructions{
+    
+    text-align: left;
+    border-style: solid;
+    padding: 5px;
+    margin: 15px;
+    
+}

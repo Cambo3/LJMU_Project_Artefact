@@ -1,0 +1,95 @@
+<html>
+  <head>
+
+    <title>Beginner</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="customChanges.css" rel="stylesheet">
+    
+    
+  </head>
+  
+  <body class="bg-light">
+      <!--The navigation bar-->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Sec-Aware</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="infoPage.html">Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="select.html">Select Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboard.php">Leaderboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+      <main class="p-5 rounded text-center BeginnerBackgroundColour" style="height:auto;">
+        <p></p>
+        
+        <!--Question-->
+        <h1 id="question" class="whiteText">Test Question</h1>
+        
+        <!--Choices-->
+        <div id="choices">
+            <button class="btn btn-lg btn-primary quizButton" id="choice1" name="answer" onclick="userClick(this.value)" value="Test1"></button>
+
+            <button class="btn btn-lg btn-primary quizButton" id="choice2" name="answer" onclick="userClick(this.value)" value="Test2"></button>
+
+            <button class="btn btn-lg btn-primary quizButton" id="choice3" name="answer" onclick="userClick(this.value)" value="Test3"></button>
+
+            <button class="btn btn-lg btn-primary quizAnswerButton" id="userAnswer" onclick="isCorrect()" value="Submit Answer">Submit Answer</button><br>
+        </div>
+        
+        <!--Submit to leaderboard-->
+        <div id="submit">
+            <form action="saveBeginner.php" method="POST">
+
+                <label class="form-label" for="username">Please Enter Username: </label>
+                <input class="col-12" type="text" id="username" name="username" value="" placeholder="Username" required><br>
+
+                <label class="form-label" for="totalScore">Score: </label>
+                <input  class="col-12" type="text" id="totalScore" name="totalScore" value="0" readonly><br><br>
+
+                <input class="btn btn-lg btn-primary" type="submit" value="Submit to leaderboards"><br>
+
+            </form>
+             
+        </div> 
+      </main>
+    </div>
+    
+    <!--External JavaScript file-->
+    <script src='beginnerQuiz.js' onload="beginnerQuiz();"></script>
+    
+    <!--Get's user's selected choice for current question-->
+    <script>
+    function userClick(answer){
+        
+       // userClickAnswer = document.getElementByName('answer').value;
+       document.getElementById("userAnswer").value = answer;
+        
+    }
+    </script>
+  
+  </body>
+</html>

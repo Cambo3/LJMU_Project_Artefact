@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <title>Feedback</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    
+
+    
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="customChanges.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Sec-Aware</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="infoPage.html">Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="select.html">Select Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leaderboard.php">Leaderboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="feedback.html">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container backgroundColour">
+      <main class="p-5 rounded text-center backgroundColour">
+        <div class="py-5 text-center">
+          </br>
+          <h2>Thank You!</h2>
+          <p class="lead">Thank you for using the Sec-Aware educational game demo, please answer the questions below in order to provide feedback.</p>
+        </div>
+              
+            <h4 class="mb-3">Feedback</h4>
+            <form action="sendFeedback.php" method="POST">
+                
+                    
+                      <label for="question1" class="form-label">How was you overall experience with the web application?</label>
+                      <select class="form-select" id="question1" name="question1" required>
+                        <option value="1">Very Poor</option>
+                        <option value="2">Slightly Poor</option>
+                        <option value="3">Okay</option>
+                        <option value="4">Good</option>
+                        <option value="5">Very Good</option>        
+                      </select><br>  
+                  
+    
+             
+                      <label for="question2" class="form-label">Do you think a game format like this could be used to inform users of human error in cyber security? Please answer Yes/No</label>
+                      <select class="form-select" id="question2" name="question2" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>                               
+                      </select><br>             
+              
+
+              
+                      <label for="question3" class="form-label">Which game did you prefer the most and why? beginner, intermediate, or expert?</label>
+                      <input type="text" class="form-control" id="question3" name="question3" value="" required><br>            
+            
+                    
+              
+                      <label for="question4" class="form-label">Do you think the addition of a leaderboard encourages users to achieve higher results? Please answer Yes/No</label>
+                      <select class="form-select" id="question4" name="question4" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>                               
+                      </select><br>            
+         
+                    
+                  
+                      <label for="question5" class="form-label">What do you think can be added in order to increase the effectiveness of the web application?</label>
+                      <input type="text" class="form-control" id="question5" name="question5" value="" required><br>            
+          
+                    
+                    
+                      <label for="question6" class="form-label">Please rate out of 5 how effective do you believe a web application like this would be, with 5 being very effective and 1 being not effective at all.</label>
+                      <select class="form-select" id="question6" name="question6" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>        
+                      </select><br>
+    
+                    <button class="w-100 btn btn-primary btn-lg normalButton" type="submit">Complete Feedback and Send</button>
+                
+              </div>
+            </form>
+            
+        </main>
+      </div>
+      
+  </body>
+</html>
